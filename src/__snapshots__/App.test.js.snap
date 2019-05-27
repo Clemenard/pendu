@@ -1,0 +1,455 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match its reference snapshot 1`] = `
+<div
+  className="pendu "
+>
+  <p
+    id="pendu"
+  >
+     
+    _____
+     
+  </p>
+  <div
+    className="row"
+  >
+    <Letter
+      disabled={false}
+      index={0}
+      key="0"
+      letter="a"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={1}
+      key="1"
+      letter="b"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={2}
+      key="2"
+      letter="c"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={3}
+      key="3"
+      letter="d"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={4}
+      key="4"
+      letter="e"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={5}
+      key="5"
+      letter="f"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={6}
+      key="6"
+      letter="g"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={7}
+      key="7"
+      letter="h"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={8}
+      key="8"
+      letter="i"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={9}
+      key="9"
+      letter="j"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={10}
+      key="10"
+      letter="k"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={11}
+      key="11"
+      letter="l"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={12}
+      key="12"
+      letter="m"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={13}
+      key="13"
+      letter="n"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={14}
+      key="14"
+      letter="o"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={15}
+      key="15"
+      letter="p"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={16}
+      key="16"
+      letter="q"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={17}
+      key="17"
+      letter="r"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={18}
+      key="18"
+      letter="s"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={19}
+      key="19"
+      letter="t"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={20}
+      key="20"
+      letter="u"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={21}
+      key="21"
+      letter="v"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={22}
+      key="22"
+      letter="w"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={23}
+      key="23"
+      letter="x"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={24}
+      key="24"
+      letter="y"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={25}
+      key="25"
+      letter="z"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+  </div>
+  <p />
+</div>
+`;
+
+exports[`should match its reference snapshot 2`] = `
+<div
+  className="pendu "
+>
+  <p
+    id="pendu"
+  >
+     
+    _____
+     
+  </p>
+  <div
+    className="row"
+  >
+    <Letter
+      disabled={false}
+      index={0}
+      key="0"
+      letter="a"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={1}
+      key="1"
+      letter="b"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={2}
+      key="2"
+      letter="c"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={3}
+      key="3"
+      letter="d"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={4}
+      key="4"
+      letter="e"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={5}
+      key="5"
+      letter="f"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={6}
+      key="6"
+      letter="g"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={7}
+      key="7"
+      letter="h"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={8}
+      key="8"
+      letter="i"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={9}
+      key="9"
+      letter="j"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={10}
+      key="10"
+      letter="k"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={11}
+      key="11"
+      letter="l"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={12}
+      key="12"
+      letter="m"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={13}
+      key="13"
+      letter="n"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={14}
+      key="14"
+      letter="o"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={15}
+      key="15"
+      letter="p"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={16}
+      key="16"
+      letter="q"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={17}
+      key="17"
+      letter="r"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={18}
+      key="18"
+      letter="s"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={19}
+      key="19"
+      letter="t"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={20}
+      key="20"
+      letter="u"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={21}
+      key="21"
+      letter="v"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={22}
+      key="22"
+      letter="w"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={23}
+      key="23"
+      letter="x"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={24}
+      key="24"
+      letter="y"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+    <Letter
+      disabled={false}
+      index={25}
+      key="25"
+      letter="z"
+      onClick={[Function]}
+      usedLetters={Array []}
+    />
+  </div>
+  <p />
+</div>
+`;

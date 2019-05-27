@@ -12,6 +12,8 @@ const Letter = ({ index, letter, onClick, usedLetters, disabled }) => (
 	}
   </div>
 )
+
+
 Letter.propTypes = {
   letter: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
@@ -20,6 +22,10 @@ Letter.propTypes = {
 	disabled: PropTypes.bool.isRequired,
 }
 
+
+
+
+
 const ALPHABET = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
 
@@ -27,9 +33,15 @@ class App extends Component {
 
 state = {
 	usedLetters : [],
-	phrase : 'pendu'
+	phrase : '',
+  falseCount : 0,
+  start : true
 }
 
+handlePhraseUpdate = (event) => {
+
+  this.setState({ phrase: event.target.value.toLowerCase()  })
+}
 
 
 computeDisplay= (phrase, usedLetters) =>{
@@ -39,26 +51,59 @@ computeDisplay= (phrase, usedLetters) =>{
 }
 
  addLetter= (letter) =>{
-	 	const { usedLetters } = this.state
+	 	const { usedLetters,falseCount,phrase } = this.state
 	usedLetters.push(letter)
-	console.log(usedLetters)
-	this.setState({usedLetters: usedLetters});
-
-
+  var arrayPhrase= phrase.split('')
+  var newCount = arrayPhrase.includes(letter) ? falseCount : falseCount+1
+	this.setState({usedLetters: usedLetters})
+  this.setState({falseCount: newCount})
 }
 
+startHanging = (event) => {
+  event.preventDefault()
+  this.setState({start: false})
+}
 
-
+restartHanging = (event) => {
+  event.preventDefault()
+  this.setState({start: true,falseCount :0, usedLetters : [] , phrase :''})
+}
 render() {
-	const { phrase, usedLetters } = this.state
-	const won = usedLetters.length === 5
+	const { phrase, usedLetters, falseCount,  start } = this.state
+	const won = this.computeDisplay(phrase, this.state.usedLetters).indexOf('_')===-1 && phrase.length>4
+  const maxFalse = 5
+  const lose = (maxFalse-falseCount)<=0
+
   return (
 
 <div className="pendu ">
+{start &&
+
+  <form  onSubmit={this.startHanging}>
+        <p>
+          <label>
+            Entrez le mot mystère
+            <input
+             type="text"
+             id="mystere"
+             onChange={this.handlePhraseUpdate}
+             value={this.state.phrase} />
+          </label>
+          <button type="submit">Valider</button>
+        </p>
+      </form>
+}
+
 <p id='pendu'> {this.computeDisplay(phrase, this.state.usedLetters)} </p>
+<p> { (maxFalse-falseCount)>0 && !start && 'Il vous reste '+ (maxFalse-falseCount) +' essais'}</p>
 <div className='row'>
+<div className='col-6'>
+  <img src={ 'hang'+(maxFalse-falseCount) +'.png'} alt=""/>
+</div>
+<div className='col-6 row'>
 {
-	ALPHABET.map((letter, index) => (
+	!start &&
+(  ALPHABET.map((letter, index) => (
     <Letter
       letter={letter}
       index={index}
@@ -67,10 +112,17 @@ render() {
 			usedLetters={usedLetters}
 			disabled={usedLetters.includes(letter)}
     />
-))
+)))
 }
 </div>
-<p>{won && 'Gagné'}</p>
+</div>
+<p>{won && 'Gagné'}{lose && 'Perdu'}</p>
+{
+(won || lose) && <form onSubmit={this.restartHanging}>
+  <button type="submit"> Rejouer?</button>
+</form>
+
+}
 </div>
 
   )
